@@ -165,7 +165,7 @@ export class Sound {
   }
 
   gameOver(): void {
-    const ctx = this.getContext();
+    this.getContext();
     [200, 150, 100].forEach((freq, i) => {
       setTimeout(() => this.playTone(freq, 0.2, 'sawtooth', 0.2), i * 150);
     });
